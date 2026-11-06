@@ -5,7 +5,7 @@ metadata:
   name: "Maintenance Log"
   version: 0.1.0
   category: industrial
-  description: "An industrial maintenance control room: equipment register, preventive work orders, downtime and close-out notes. It records machine states; it never controls machinery."
+  description: "An industrial maintenance control room: 18 machines, 12 open work orders (4 awaiting parts, 3 overdue), 6.4 hours of downtime this month, asset profiles, and work orders closed only with a dated note and downtime."
   license: MIT
   visibility: public
 spec:
@@ -23,9 +23,15 @@ spec:
     # The PLANT/OPS top bar with the site and online count.
     - id: plant-shell
       name: plant-shell
-    # The control room: register, upcoming work, asset inspector, work-order detail and actions.
-    - id: maintenance
-      name: maintenance
+    # The control room at /: metrics, the equipment register with a status filter, upcoming work and the selected asset.
+    - id: control
+      name: control
+    # Asset profiles at /machines/:id: operating hours, health, open tasks and the service history.
+    - id: machines
+      name: machines
+    # Work orders: create at /work-orders/new, detail at /work-orders/:id, assign, schedule, start and close-out.
+    - id: work-orders
+      name: work-orders
     - id: extensions
       name: extensions
     - id: server
