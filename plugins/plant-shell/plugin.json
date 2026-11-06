@@ -1,0 +1,9 @@
+{
+  "name": "plant-shell",
+  "description": "The Maintenance Log's page shell: the PLANT/OPS top bar with the site, the online machine count and the wrap.",
+  "requires": [],
+  "inject": ["plant", "router"],
+  "provides": ["shell"],
+  "dependencies": { "@deepseek-ai/cordis": "4.0.4" },
+  "mount": "a row `- id: plant-shell` / `name: plant-shell` after the plant row and before the maintenance row in blend.yaml; a page injects `shell`"
+}

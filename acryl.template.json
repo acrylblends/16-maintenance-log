@@ -1,0 +1,5 @@
+{
+  "name": "Maintenance Log",
+  "description": "An industrial maintenance control room: equipment register, preventive work orders, downtime and close-out notes. It records machine states; it never controls machinery.",
+  "plugins": []
+}

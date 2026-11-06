@@ -1,17 +1,22 @@
 # Maintenance Log
 
-Track machines, preventive maintenance schedules, work orders, downtime and service history for a facility.
+An industrial maintenance control room: equipment register, preventive work orders, downtime, service history and close-out notes. It records machine states; it never controls machinery.
 
-An ACRYL Blends blueprint for the **Industrial** category (`acrylblends.maintenance-log`, category 16 of 100).
-
-Status: designed, being built. `design/spec.md` is the specification and `design/mockup.html` the mockup (open it in a browser). The app itself,
-composed from Cordis plugins (one `plugins/<feature>/` folder and one `blend.yaml` row per feature), lands here when it passes review.
-
-When it is ready you will start it with:
+## Run it
 
 ```sh
-npm create acrylblends@latest my-app -- --from acrylblends.maintenance-log
-cd my-app && npm install && npm run dev
+npm install
+npm start
 ```
 
-Listed on https://acrylblends.github.io/blends and https://acryl.dev/blends.
+Open the address it prints. `npm test` runs the tests (node:test; no network, no key).
+
+## What to ask the chat next
+
+- Create a repair work order for the compressor and assign it to M. Novak.
+- Close the overdue hydraulic work order with a note and 30 minutes of downtime.
+- Select the CNC mill and review its recent service history.
+
+## Screenshot
+
+![Maintenance Log](docs/screenshot.png)

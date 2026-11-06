@@ -1,0 +1,9 @@
+{
+  "name": "plant",
+  "description": "The Maintenance Log's domain: machines, work orders and service history, saved as JSON in the app's data home. The page plugin injects it.",
+  "requires": [],
+  "inject": ["appInstance"],
+  "provides": ["plant"],
+  "dependencies": { "@deepseek-ai/cordis": "4.0.4" },
+  "mount": "a row `- id: plant` / `name: plant` before the page rows in blend.yaml; a page injects the `plant` service"
+}
